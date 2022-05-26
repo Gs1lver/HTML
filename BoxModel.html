@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content - Type" content="text/html; charset=UTF-8">
+        <title> Box Model </title>
+        <link rel="icon" type="image/x-icon" href="/Imagens/gato2.ico"> 
+        <style type="text/css">
+            * {
+                box-sizing: border-box;
+            }
+
+            body{
+                margin: 0px;
+                /*background-color: #855765;*/
+                background-image: url("https://www.chimichangas.com.br/wp-content/uploads/2020/03/poster-kiki.jpg");
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+
+            /*body:hover {
+                background-image: url("https://www.jbox.com.br/wp/wp-content/uploads/2018/05/kiki-destacada.jpg");
+            }*/
+
+            #menu {
+                
+                background-color: #c3423d;
+                padding: 5px 10px 5px 10px;
+                margin-bottom: 10px;
+            }
+
+            .formataDiv {
+                color: #33201f;
+                background-color: #d06a4e;
+                opacity: 0.7;
+
+                margin-left: 15px;  
+                width: 250px;
+                height: 220px;
+                /*visibility: hidden; mantem espaço ocupado*/
+                display: block; /*none mantém escondido mas sem ocupar o espaço
+                
+                /* margem interna sentido correto: top, bot, right, left
+                padding-top: 10px;
+                padding-right: 20px;
+                padding-bottom: 10px;
+                padding-left: 20px;*/
+                padding: 10px 20px 10px 20px;
+
+                /* margem externa*/
+                margin: 10px auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div id="menu">
+            <a href="https://pt.wikipedia.org/wiki/Studio_Ghibli"> Studio Ghibli |</a>
+            <a href="https://pt.wikipedia.org/wiki/Hayao_Miyazaki">Hayao Miyazaki</a>
+
+        </div>
+        <div class="formataDiv">
+            O Serviço de Entregas da Kiki
+            <br>
+            Por ordem de sua mãe, Kiki parte para um aprendizado de um ano, acompanhada por seu gato preto. 
+            A um comando de sua vassoura mágica, ela vai parar na charmosa cidadezinha de Moreoastal. Infelizmente, 
+            os hotéis locais não aceitam bruxas e a polícia a flagra fazendo algumas travessuras.
+        </div>
+
+        <div style="color: #e9ab99;">
+            O Serviço de Entregas da Kiki
+            <br>
+            Por ordem de sua mãe, Kiki parte para um aprendizado de um ano, acompanhada por seu gato preto. 
+            A um comando de sua vassoura mágica, ela vai parar na charmosa cidadezinha de Moreoastal. Infelizmente, 
+            os hotéis locais não aceitam bruxas e a polícia a flagra fazendo algumas travessuras.
+        </div>
+
+    </body>
+</html>
