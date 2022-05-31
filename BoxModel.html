@@ -3,18 +3,22 @@
     <head>
         <meta http-equiv="Content - Type" content="text/html; charset=UTF-8">
         <title> Box Model </title>
-        <link rel="icon" type="image/x-icon" href="/Imagens/gato2.ico"> 
+        <link rel="icon" type="image/x-icon" href="Imagens/gato.ico"> 
         <style type="text/css">
+
             * {
                 box-sizing: border-box;
             }
 
             body{
+                height: 100vh; /* viewport*/
                 margin: 0px;
                 /*background-color: #855765;*/
-                background-image: url("https://www.chimichangas.com.br/wp-content/uploads/2020/03/poster-kiki.jpg");
+                background-image: url("Imagens/poster-kiki.png");
                 background-size: 100%;
                 background-repeat: no-repeat;
+                /*background-position: center center; vertical horizontal */
+                background-attachment: fixed;
             }
 
             /*body:hover {
@@ -22,7 +26,6 @@
             }*/
 
             #menu {
-                
                 background-color: #c3423d;
                 padding: 5px 10px 5px 10px;
                 margin-bottom: 10px;
@@ -31,7 +34,7 @@
             .formataDiv {
                 color: #33201f;
                 background-color: #d06a4e;
-                opacity: 0.7;
+                opacity: 0.8;
 
                 margin-left: 15px;  
                 width: 250px;
@@ -49,16 +52,51 @@
                 /* margem externa*/
                 margin: 10px auto;
             }
+
+            h1{
+                background-image: url("Imagens/tv.png");
+                background-repeat: no-repeat;
+                background-clip: text;
+                background-position: center;
+                background-size: 35%;
+
+                /*chrome e safari*/
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                /* IE - edge */
+                -ms-background-clip: text;
+                -ms-text-fill-color: transparent;
+
+                /* mozilla firefox */
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;
+
+                /* opera */
+                -o-background-clip: text;
+                -o-text-fill-color: transparent;
+            }
         </style>
     </head>
 
     <body>
         
         <div id="menu">
-            <a href="https://pt.wikipedia.org/wiki/Studio_Ghibli"> Studio Ghibli |</a>
-            <a href="https://pt.wikipedia.org/wiki/Hayao_Miyazaki">Hayao Miyazaki</a>
+            <a href="https://pt.wikipedia.org/wiki/Studio_Ghibli" target="_blank"> Studio Ghibli |</a>
+            <a href="https://pt.wikipedia.org/wiki/Hayao_Miyazaki" target="_blank">Hayao Miyazaki</a>
 
         </div>
+
+        <h1 align="center">O Serviço de Entregas da Kiki</h1>
+
+        <div align="center" style="color: #e9ab99;">
+            O Serviço de Entregas da Kiki
+            <br>
+            Por ordem de sua mãe, Kiki parte para um aprendizado de um ano, acompanhada por seu gato preto. 
+            A um comando de sua vassoura mágica, ela vai parar na charmosa cidadezinha de Moreoastal. Infelizmente, 
+            os hotéis locais não aceitam bruxas e a polícia a flagra fazendo algumas travessuras.
+        </div>
+
         <div class="formataDiv">
             O Serviço de Entregas da Kiki
             <br>
@@ -67,13 +105,34 @@
             os hotéis locais não aceitam bruxas e a polícia a flagra fazendo algumas travessuras.
         </div>
 
-        <div style="color: #e9ab99;">
+        <div class="formataDiv">
             O Serviço de Entregas da Kiki
             <br>
             Por ordem de sua mãe, Kiki parte para um aprendizado de um ano, acompanhada por seu gato preto. 
             A um comando de sua vassoura mágica, ela vai parar na charmosa cidadezinha de Moreoastal. Infelizmente, 
             os hotéis locais não aceitam bruxas e a polícia a flagra fazendo algumas travessuras.
         </div>
+
+        <div class="formataDiv">
+            O Serviço de Entregas da Kiki
+            <br>
+            Por ordem de sua mãe, Kiki parte para um aprendizado de um ano, acompanhada por seu gato preto. 
+            A um comando de sua vassoura mágica, ela vai parar na charmosa cidadezinha de Moreoastal. Infelizmente, 
+            os hotéis locais não aceitam bruxas e a polícia a flagra fazendo algumas travessuras.
+        </div>
+
+        <div class="formataDiv">
+            O Serviço de Entregas da Kiki
+            <br>
+            Por ordem de sua mãe, Kiki parte para um aprendizado de um ano, acompanhada por seu gato preto. 
+            A um comando de sua vassoura mágica, ela vai parar na charmosa cidadezinha de Moreoastal. Infelizmente, 
+            os hotéis locais não aceitam bruxas e a polícia a flagra fazendo algumas travessuras.
+        </div>
+
+        <div id="menu">
+            Rodapé
+        </div>
+        
 
     </body>
 </html>
