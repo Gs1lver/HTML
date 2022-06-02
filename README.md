@@ -1,2 +1,2 @@
-# HTML
-treinos de html
+# WEB
+exemplos de aulas com html, css e javascript
