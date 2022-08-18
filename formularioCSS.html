@@ -1,0 +1,156 @@
+<!Doctype html>
+
+<html>
+    
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro de Usuário com CSS</title>
+    <style type="text/css">
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .box {
+            border: 1px solid gray;
+            border-radius: 5px;
+            max-width: 500px;
+            box-shadow: 5px 5px 5px grey;
+            padding: 10px 30px 10px 30px;
+        }
+
+        label{
+            color: rgb(47, 76, 171);
+            font-weight: bold;
+        }
+        
+        .campos {
+            margin-bottom: 20px;
+        }
+
+        .box-campos{
+            margin-bottom: 20px;
+        }
+
+        .formataInput{
+            width: 100%;
+            height: 30px;
+            margin-top: 5px;
+            background-color: lightgray;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: aqua;
+            width: 100%;
+            color: white;
+            text-shadow: 1px, 1px, black;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px, 0px, 10px, 0px;
+            border-radius: 10px;
+
+            border-bottom: 5px solid blue;
+            border-right: 5px solid blue;
+
+            border-top: 5px solid rgb(50, 153, 187);
+            border-left: 5px solid rgb(21, 116, 147);
+        }
+
+        button:hover {
+            border-radius: 10px;
+            border-bottom: 5px solid rgb(50, 153, 187);
+            border-right: 5px solid rgb(50, 153, 187);
+
+            border-top: 5px solid blue;
+            border-left: 5px solid blue;
+        }
+
+        input:hover {
+            background-color: lightskyblue;
+            border-color: blue;
+        }
+
+        input :focus{
+            background-color: white;
+            border-color: blue;
+            color: blue;
+        }
+
+        input::placeholder{
+            color: white;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+    
+<body>
+    
+    <div class="box">
+
+        <h1>Cadastro de Usuário</h1>
+        
+        <form>
+            
+            <div class="campos">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Digite um nome" required minlength="5" class="formataInput">
+            </div>
+            
+            <div class="campos">
+                <label for="email">E-Mail</label>
+                <input id="email" type="email" required placeholder="nome@email.com" class="formataInput">
+            </div>
+
+            
+            <div class="campos">
+                <label for="senha">Senha</label>
+                <input id="senha" type="password" minlength="6" class="formataInput" required>
+            </div>
+            
+            <div class="campos">
+                <label>Escolha suas frutas favoritas:</label>
+                <input id="laranja" type="checkbox" value="laranja"><label for="laranja">Laranja</label>
+                <input id="maca" type="checkbox" value="maca"><label for="maca">Maçã</label>
+                <input id="banana" type="checkbox" value="banana"><label for="banana">Banana</label>
+            </div>
+            
+            <div class="campos">
+                <label>Sexo:</label>
+                <input name="sexo" id="f" type="radio" value="f"><label for="f">F</label>
+                <input name="sexo" id="m" type="radio" value="m"><label for="m">M</label>
+            </div>
+            
+            <div class="campos">
+                <label for="cor">Escolha uma cor</label>
+                <input id="cor" type="color" class="formataInput">
+            </div>
+            <br>
+            
+            <div class="campos">
+                <label for="aniversario">Data de Aniversário</label>
+                <input id="aniversario" type="date" class="formataInput" required>
+            </div>
+            
+            <div class="campos">
+                <label for="idade">Idade</label>
+                <input id="idade" type="number" min="10" class="formataInput">
+            </div>
+            
+            <div class="campos">
+                <label for="nota">Nota</label>
+                <input id="nota" type="range" min="0" max="10" class="formataInput">
+            </div>
+            
+            <div class="campos">
+                <label for="pagina">Página</label>
+                <input id="pagina" type="url" placeholder="https://suapagina.com" class="formataInput">
+            </div>
+            
+            <button type="submit" value="Cadastrar">Cadastrar</button>
+
+        </form>
+    </div>
+</body>
+</html>
