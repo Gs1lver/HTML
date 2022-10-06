@@ -2,179 +2,179 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
 
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+  <style>
+    .formata-div {
+      border: 1px solid rgb(74, 21, 27);
+      background-color: rgb(255, 241, 241);
+    }
 
-    <style>
-        .formata-div {
-            border: 1px solid rgb(74, 21, 27);
-            background-color: rgb(255, 241, 241);
-        }
-
-        .formata-row {
-            background-color: rgb(233, 119, 125);
-            height: 100px;
-        }
-    </style>
+    .formata-row {
+      background-color: rgb(233, 119, 125);
+      height: 100px;
+    }
+  </style>
 
 </head>
 
 <body style="background-color: rgb(245, 224, 196);">
-    <h2>Exemplo 1 - Bootstrap</h2>
+  <h2>Exemplo 1 - Bootstrap</h2>
 
-    <p>Parágrafo</p>
+  <p>Parágrafo</p>
+
+  <ul>
+    <li>item 1</li>
+    <li>item 2</li>
+  </ul>
+
+  <div class="container" style="background-color: rgb(149, 221, 151);">
+    <h2>Container</h2>
+    <p>Paragrafo</p>
 
     <ul>
-        <li>item 1</li>
-        <li>item 2</li>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
     </ul>
+  </div>
 
-    <div class="container" style="background-color: rgb(149, 221, 151);">
-        <h2>Container</h2>
-        <p>Paragrafo</p>
+  <div class="container-fluid" style="background-color: rgb(203, 141, 220);">
+    <h2>Container Fluido</h2>
+    <p>Paragrafo</p>
 
-        <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-            <li>item 4</li>
-        </ul>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+    </ul>
+  </div>
+
+  <div class="container" style="background-color: pink;">
+
+    <!-- Primeira linha grid-system-->
+    <div class="row">
+      <div class="col">
+        <h1>Kirby</h1>
+      </div>
     </div>
 
-    <div class="container-fluid" style="background-color: rgb(203, 141, 220);">
-        <h2>Container Fluido</h2>
-        <p>Paragrafo</p>
-
-        <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-        </ul>
-    </div>
-
-    <div class="container" style="background-color: pink;">
-
-        <!-- Primeira linha grid-system-->
-        <div class="row">
-            <div class="col">
-                <h1>Kirby</h1>
-            </div>
-        </div>
-
-        <!-- Segunda linha grid-system-->
-        <div class="row">
+    <!-- Segunda linha grid-system-->
+    <div class="row">
 
 
-            <div class="col-md-4 col-sm-12">
-                <img src="Imagens/kirbyOwO.png" class="img-fluid">
-                <br>
-                Kirby :D
-            </div>
-
-            <div class="col-md-4 col-sm-12">
-                <!--Coluna tela média 4 colunas / coluna tela pequena 12 colunas-->
-                <img src="Imagens/kirbyRound.png" class="img-fluid">
-                <br>
-                Kirby round
-            </div>
-
-            <div class="col-md-4 col-sm-12">
-                <!--Coluna tela média 4 colunas / coluna tela pequena 12 colunas-->
-                <img src="Imagens/kirbyDoce.png" class="img-fluid" width="320px">
-                <br>
-                Kirby Docinho
-            </div>
-        </div>
-
-    </div>
-    <br>
-    <hr>
-  
-
-    <div class="container">
-
-        <h3>Alinhamento Vertical - todas as colunas da mesma linha com mesmo alinhamento</h2>
-  
-        <div class="row formata-row align-items-start">
-          <div class="col-md-4 formata-div">One of three columns</div>
-          <div class="col-md-4 formata-div">One of three columns</div>
-          <div class="col-md-4 formata-div">One of three columns</div>
-        </div>
-   
+      <div class="col-md-4 col-sm-12">
+        <img src="Imagens/kirbyOwO.png" class="img-fluid">
         <br>
-  
-        <div class="row formata-row align-items-center">
-          <div class="col formata-div">One of three columns</div>
-          <div class="col formata-div">One of three columns</div>
-          <div class="col formata-div">ne of three columns</div>
-        </div>
-  
+        Kirby :D
+      </div>
+
+      <div class="col-md-4 col-sm-12">
+        <!--Coluna tela média 4 colunas / coluna tela pequena 12 colunas-->
+        <img src="Imagens/kirbyRound.png" class="img-fluid">
         <br>
-  
-        <div class="row formata-row align-items-end">
-          <div class="col formata-div">One of three columns</div>
-          <div class="col formata-div">One of three columns</div>
-          <div class="col formata-div">One of three columns</div>
-        </div>
-  
-      </div>    
-  
-      <br><br>
-  
-      <div class="container">
-  
-        <h3>Alinhamento Vertical - cada colunas da mesma linha com um alinhamento</h2>    
-  
-        <div class="row formata-row">
-          <div class="col formata-div align-self-start">One of three columns</div>
-          <div class="col formata-div align-self-center">One of three columns</div>
-          <div class="col formata-div align-self-end">One of three columns</div>
-        </div>
-  
-      </div>    
-  
-      <br><br>
-  
-      <div class="container">
-  
-        <h3>Alinhamento Horizontal - vale para a linha toda</h2>  
-  
-        <div class="row  formata-row justify-content-start">
-          <div class="col-4 formata-div">One of two columns</div>
-          <div class="col-4 formata-div">One of two columns</div>
-        </div>
-  
-        <div class="row  formata-row justify-content-center">
-          <div class="col-4 formata-div">One of two columns</div>
-          <div class="col-4 formata-div">One of two columns</div>
-        </div>
-  
-        <div class="row  formata-row justify-content-end">
-          <div class="col-4 formata-div">One of two columns</div>
-          <div class="col-4 formata-div">One of two columns</div>
-        </div>
-  
-        <div class="row  formata-row justify-content-around">
-          <div class="col-4 formata-div">One of two columns</div>
-          <div class="col-4 formata-div">One of two columns</div>
-        </div>
-  
-        <div class="row  formata-row justify-content-between">
-          <div class="col-4 formata-div">One of two columns</div>
-          <div class="col-4 formata-div">One of two columns</div>
-        </div>
-  
-     </div>    
+        Kirby round
+      </div>
+
+      <div class="col-md-4 col-sm-12">
+        <!--Coluna tela média 4 colunas / coluna tela pequena 12 colunas-->
+        <img src="Imagens/kirbyDoce.png" class="img-fluid" width="320px">
+        <br>
+        Kirby Docinho
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <hr>
+
+
+  <div class="container">
+
+    <h3>Alinhamento Vertical - todas as colunas da mesma linha com mesmo alinhamento</h2>
+
+      <div class="row formata-row align-items-start">
+        <div class="col-md-4 formata-div">One of three columns</div>
+        <div class="col-md-4 formata-div">One of three columns</div>
+        <div class="col-md-4 formata-div">One of three columns</div>
+      </div>
+
+      <br>
+
+      <div class="row formata-row align-items-center">
+        <div class="col formata-div">One of three columns</div>
+        <div class="col formata-div">One of three columns</div>
+        <div class="col formata-div">ne of three columns</div>
+      </div>
+
+      <br>
+
+      <div class="row formata-row align-items-end">
+        <div class="col formata-div">One of three columns</div>
+        <div class="col formata-div">One of three columns</div>
+        <div class="col formata-div">One of three columns</div>
+      </div>
+
+  </div>
+
+  <br><br>
+
+  <div class="container">
+
+    <h3>Alinhamento Vertical - cada colunas da mesma linha com um alinhamento</h2>
+
+      <div class="row formata-row">
+        <div class="col formata-div align-self-start">One of three columns</div>
+        <div class="col formata-div align-self-center">One of three columns</div>
+        <div class="col formata-div align-self-end">One of three columns</div>
+      </div>
+
+  </div>
+
+  <br><br>
+
+  <div class="container">
+
+    <h3>Alinhamento Horizontal - vale para a linha toda</h2>
+
+      <div class="row  formata-row justify-content-start">
+        <div class="col-4 formata-div">One of two columns</div>
+        <div class="col-4 formata-div">One of two columns</div>
+      </div>
+
+      <div class="row  formata-row justify-content-center">
+        <div class="col-4 formata-div">One of two columns</div>
+        <div class="col-4 formata-div">One of two columns</div>
+      </div>
+
+      <div class="row  formata-row justify-content-end">
+        <div class="col-4 formata-div">One of two columns</div>
+        <div class="col-4 formata-div">One of two columns</div>
+      </div>
+
+      <div class="row  formata-row justify-content-around">
+        <div class="col-4 formata-div">One of two columns</div>
+        <div class="col-4 formata-div">One of two columns</div>
+      </div>
+
+      <div class="row  formata-row justify-content-between">
+        <div class="col-4 formata-div">One of two columns</div>
+        <div class="col-4 formata-div">One of two columns</div>
+      </div>
+
+  </div>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 
 </body>
 
