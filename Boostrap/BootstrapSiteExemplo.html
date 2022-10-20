@@ -16,11 +16,19 @@
     <style type="text/css">
 
         .myColor {
-            color: rgb(113, 41, 222);
+            color: rgb(21, 21, 21);
         }
 
         .myContainer{
-            background-color: rgba(255, 193, 7, 0.6)
+            background-color: rgba(255, 193, 7, 0.7)
+        }
+
+        .card img {
+            height: 250px;
+        }
+
+        .card{
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -74,7 +82,9 @@
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-warning" type="submit">Buscar</button>
+                    <button class="btn btn-outline-warning" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
                 </form>
             </div>
         </div>
@@ -84,15 +94,16 @@
     <!-- Container Inicial -->
     <div class="container mt-3">
         <div class="row">
-            <div class="col-md-2 col-sm-12">
+            <div class="col-md-2 col-sm-12 pt-2">
+                <i class="bi bi-house-door-fill"></i>
             </div>
 
             <div class="col-md-3 col-sm-12 pt-2">
-                <i class="bi bi-telephone-fill myColor"></i> (19) 2113-3300
+                <i class="bi bi-telephone-fill"></i> (19) 2113-3300
             </div>
 
             <div class="col-md-3 col-sm-12 pt-2">
-                <i class="bi bi-envelope-fill myColor"></i> cotil@cotil.unicamp.br
+                <i class="bi bi-envelope-fill"></i> cotil@cotil.unicamp.br
             </div>
 
             <div class="col-md-4 col-sm-12">
@@ -118,6 +129,82 @@
     <!-- Container Cursos-->
     <div class="container myContainer">
         <h4 class="display-5">Nossos Cursos</h4>
+        
+         <!--Primeira Linha do Grid System-->
+        <div class="row">
+           
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="Imagens/dsd.png" class="card-img-top" alt="Desenvolvimento de Sistemas"> <!--750 x 420-->
+                    <div class="card-body">
+                      <h5 class="card-title">Desenvolvimento de Sistemas</h5>
+                      <p class="card-text">Pra quem tem interesse em criação de softwares.</p>
+                      <a href="dsd.html" class="btn btn-dark">Conheça</a>
+                    </div>
+                  </div>
+            </div >
+
+            <!-- Linha -->
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="Imagens/med.jpg   " class="card-img-top" alt="Mecânica"> <!--750 x 420-->
+                    <div class="card-body">
+                      <h5 class="card-title">Mecânica</h5>
+                      <p class="card-text">Não, não é mecânica de carros.</p>
+                      <a href="med.html" class="btn btn-dark">Conheça</a>
+                    </div>
+                  </div>
+            </div >
+
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="Imagens/enf.jpeg" class="card-img-top" alt="Enfermagem">
+                    <div class="card-body">
+                      <h5 class="card-title">Enfermagem</h5>
+                      <p class="card-text">Para quem não tem medo de agulha nem sangue.</p>
+                      <a href="enf.html" class="btn btn-dark">Conheça</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <!-- Segunda linha do grid system-->
+        <div class="row">
+
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="Imagens/geo.jpg" class="card-img-top" alt="Geodésia e Cartografia"> <!--750 x 420-->
+                    <div class="card-body">
+                      <h5 class="card-title">Geodésia e Cartografia</h5>
+                      <p class="card-text">Pra quem tem interesse em mapas e maconha.</p>
+                      <a href="geo.html" class="btn btn-dark">Conheça</a>
+                    </div>
+                  </div>
+            </div >
+
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="Imagens/ccd.jpg" class="card-img-top" alt="Edificações">
+                    <div class="card-body">
+                      <h5 class="card-title">Edificações</h5>
+                      <p class="card-text">Para quem tem interesse na área de construção civil</p>
+                      <a href="ccd.html" class="btn btn-dark">Conheça</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="Imagens/qpd.jpg" class="card-img-top" alt="Qualidade"> <!--750 x 420-->
+                    <div class="card-body">
+                      <h5 class="card-title">Qualidade</h5>
+                      <p class="card-text">Nem eles sabem o que eles fazem</p>
+                      <a href="qpd.html" class="btn btn-dark">Conheça</a>
+                    </div>
+                  </div>
+            </div >
+
+        </div>
     </div>
     <!--Fim Container Cursos-->
 
