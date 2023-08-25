@@ -1,2 +1,3 @@
 # WEB
-exemplos de aulas com html, css e javascript
+Repositório criado para armazenar exemplos práticos realizados nas aulas de Desenvolvimento de Sistemas Web em 2022.
+
